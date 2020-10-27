@@ -104,6 +104,8 @@ npm install
 
 4. Open the `config` folder and update the `config.json` file's `development` object to match your own local MySQL database.
 
+<img src="https://github.com/davidyi0529/Reverse-Starter-Code-Tutorial_D/blob/main/Images/Config.png?raw=true" width="300" height="300">
+
 <br />
 
 5. Start local host server with server.js.

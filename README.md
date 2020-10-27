@@ -150,27 +150,42 @@ node server.js
 <br />
 <br />
 
-Below is explanation of the compilation of files used for this application.
+Below is a brief description of the compilation of files used for this application.
 
 - `config`
+
     - middleware
-        - isAuthenticated.js - Restricts the user to access certain routes without login authentication. If the user is logged in, then it will continue with the users route request. Routing can be found in `html-routes.js line:27-29`.
-    - config.json
-    - passport.js
+        - isAuthenticated.js - Restricts the user to access certain routes without login authentication. If the user is logged in, then it will continue with the users route request.
+    
+    - config.json - Connection configurations to connect to the server.
+
+    - passport.js - Authentication with `Passport` to log in with an email address and password.
+
 - `models`
-    - index.js
-    - user.js
+
+    - index.js - Connects to database and imports users data logs.
+
+    - user.js - Creation of user information that is stored into the database. Uses `bcrypt` for password hashing which allows a more secure database. 
+
 - `public`
     - js
-        -login.js
-        -members.js
-        -signup.js
-    - login.html, members.html, signup.html
+        - login.js - Login validation
+
+        - members.js - Checks to see which user is logged in and updates the html page.
+
+        - signup.js - New user creation validation
+
+    - login.html, members.html, signup.html - Page layouts
+
 - `routes`
-    - api-routes.js
-    - html-routes.js
-- `package.json`
-- `server.js`
+
+    - api-routes.js - Routes for logging in and getting users data to be displayed client side.
+
+    - html-routes.js - Routes to authenticate the user's login and re-direct the user to the correct html page.
+
+- `package.json` - Contains all package information.
+
+- `server.js` - Requires packages, sets up PORTS, creates express, middleware, routes, and syncs the database.
 
 <br />
 <br />

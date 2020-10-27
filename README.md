@@ -129,7 +129,7 @@ node server.js
 
 <br />
 
-<img src="https://github.com/davidyi0529/Reverse-Starter-Code-Tutorial_D/blob/main/Images/signuppage.png?raw=true" width="600" height="600">
+<img src="https://github.com/davidyi0529/Reverse-Starter-Code-Tutorial_D/blob/main/Images/signuppage.png?raw=true" width="600" height="400">
 
 <br />
 <br />

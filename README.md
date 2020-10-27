@@ -154,7 +154,7 @@ Below is explanation of the compilation of files used for this application.
 
 - `config`
     - middleware
-        - isAuthenticated.js
+        - isAuthenticated.js - Restricts the user to access certain routes without login authentication. If the user is logged in, then it will continue with the users route request. Routing can be found in `html-routes.js line:27-29`.
     - config.json
     - passport.js
 - `models`

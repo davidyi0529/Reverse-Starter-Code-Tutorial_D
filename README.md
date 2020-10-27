@@ -4,7 +4,7 @@
 
 # Reverse-Starter-Code-Tutorial_D
 
-Reverse-Starter-Code-Tutorial_D.
+Reverse-Starter-Code-Tutorial_D is a tutorial to provide a walk-through of the code with details on the functionality, which will allow the user to understand what each file does.
 
 <br />
 
@@ -98,7 +98,7 @@ npm install
 
 <br />
 
-3. Create a new MySQL database and name it `passport_demo`. Don't create any tables.
+3. Create a new MySQL database and name it `passport_demo`.
 
 <br />
 
@@ -123,14 +123,19 @@ npm install
 ```bash
 node server.js
 ```
+<br />
+
+6. Navigate to your localhost in the browser.
 
 <br />
 
-6. Navigate to localhost:3000 in the browser.
+<img src="https://github.com/davidyi0529/Reverse-Starter-Code-Tutorial_D/blob/main/Images/signuppage.png?raw=true" width="600" height="600">
 
 <br />
+<br />
 
-7. Have fun adding your new burgers and devouring them.
+
+7. Enjoy the app.
 
 <br />
 <br />
@@ -139,6 +144,71 @@ node server.js
 
 <br />
 <br />
+
+## Description
+
+<br />
+<br />
+
+Below is explanation of the compilation of files used for this application.
+
+- `config`
+    - middleware
+        - isAuthenticated.js
+    - config.json
+    - passport.js
+- `models`
+    - index.js
+    - user.js
+- `public`
+    - js
+        -login.js
+        -members.js
+        -signup.js
+    - login.html, members.html, signup.html
+- `routes`
+    - api-routes.js
+    - html-routes.js
+- `package.json`
+- `server.js`
+
+<br />
+<br />
+
+---
+
+<br />
+<br />
+
+## Support
+
+<br />
+
+Reach out to me at one of the following places!
+
+> Linkedin @ <a href="www.linkedin.com/in/davidyi0529" target="_blank">`davidyi0529`</a> 
+
+> Github @ <a href="https://github.com/davidyi0529" target="_blank">`davidyi0529`</a>
+
+<br />
+<br />
+
+---
+
+<br />
+<br />
+
+## License
+
+<br />
+
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+
+<br />
+
+Copyright &copy; All rights reserved.
+
+Licensed under the [MIT](https://choosealicense.com/licenses/mit/) license.
 
 
 

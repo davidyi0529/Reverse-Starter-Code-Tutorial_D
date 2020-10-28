@@ -43,11 +43,25 @@ However, if the user is not logged in the it will return and redirect the user t
 
 2. `config.json` - Provides connection configurations to connect to the server.
 
+<br />
+
 <img src="https://github.com/davidyi0529/Reverse-Starter-Code-Tutorial_D/blob/main/Images/Config.png?raw=true" width="500" height="400">
 
 <br />
 
 Configurations are provided for handling multiple environments (Development, Test, or Production).
+
+<br />
+
+3. `passport.js` - Authentication with `Passport-local` to log in with an email address and password.
+
+<br />
+
+<img src="https://github.com/davidyi0529/Reverse-Starter-Code-Tutorial_D/blob/main/Images/passport.png?raw=true" width="500" height="700">
+
+<br />
+
+Passport.js requires passport and passport-local. Passport-local is a passport strategy for authenticating with a username and password.
 
 <br />
 <br />

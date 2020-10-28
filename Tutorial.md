@@ -157,22 +157,40 @@ Within the Public folder contains files needed for the front end of the applicat
 <br />
 <br />
 
+## Routes
 
-- `public`
-    - js
-        - login.js - Login validation
+<br />
+<br />
 
-        - members.js - Checks to see which user is logged in and updates the html page.
+Within the Routes folder contains files needed to correctly route the user's data and correct page to be displayed.
 
-        - signup.js - New user creation validation
+<br />
 
-    - login.html, members.html, signup.html - Page layouts
+1. `api-routes.js` - Routes for logging in and getting users data to be displayed client side.
 
-- `routes`
+<br />
 
-    - api-routes.js - Routes for logging in and getting users data to be displayed client side.
+<img src="https://github.com/davidyi0529/Reverse-Starter-Code-Tutorial_D/blob/main/Images/apiroutes.png?raw=true" width="600" height="700">
 
-    - html-routes.js - Routes to authenticate the user's login and re-direct the user to the correct html page.
+<br />
+
+2. `html-routes.js` - Routes to authenticate the user's login and re-direct the user to the correct html page.
+
+<br />
+
+<img src="https://github.com/davidyi0529/Reverse-Starter-Code-Tutorial_D/blob/main/Images/htmlroutes.png?raw=true" width="600" height="500">
+
+<br />
+
+
+
+<br />
+<br />
+
+---
+
+<br />
+<br />
 
 - `package.json` - Contains all package information.
 

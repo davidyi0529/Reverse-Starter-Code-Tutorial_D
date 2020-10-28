@@ -174,6 +174,18 @@ Within the Routes folder contains files needed to correctly route the user's dat
 
 <br />
 
+Models and Passport will be required. 
+
+`Passport.authenticate("local")` will check if the user has valid credentials to direct them to the members page.
+
+`app.post("/api/signup")` function is used to for signing up a user. 
+
+`app.get("/logout")` function used to log out the user.
+
+`app.get("/api/user_data")` function is used to retrieve user data. If the user is not logged in, they will receive an empty object, otherwise, the user's email and id will be received.
+
+<br />
+
 2. `html-routes.js` - Routes to authenticate the user's login and re-direct the user to the correct html page.
 
 <br />
@@ -182,7 +194,15 @@ Within the Routes folder contains files needed to correctly route the user's dat
 
 <br />
 
+Path is first required, then isAuthenticated is used to check if the user is logged in.
 
+The following functions used is to properly direct the user to the correct page.
+
+The `app.get("/")` function is used when the user has an account they will then be directed to the members page, if not then they will be directed to the signup page.
+
+The `app.get("/login")` function is used when the user has an account they will then be directed to the members page, if not then they will be directed to the login page.
+
+The `app.get("/members")` function will check if the user is logged in with their information before accessing the members page. If not, they will be re-directed to the signup page.
 
 <br />
 <br />
@@ -192,6 +212,35 @@ Within the Routes folder contains files needed to correctly route the user's dat
 <br />
 <br />
 
-- `package.json` - Contains all package information.
+## Server.js
 
-- `server.js` - Requires packages, sets up PORTS, creates express, middleware, routes, and syncs the database.
+<br />
+<br />
+
+The server.js file requires packages, sets up PORTS, creates express, middleware, routes, and syncs the database. 
+
+<br />
+
+<img src="https://github.com/davidyi0529/Reverse-Starter-Code-Tutorial_D/blob/main/Images/serverjs.png?raw=true" width="700" height="700">
+
+<br />
+
+Requires the necessary NPM packages that are essential to running the application.
+
+Setting up the port and syncing it to the models directory for the database.
+
+Create an express app to configure middleware needed for the authentication.
+
+`Express-sessions` is used to keep track of login status's.
+
+Requiring the routes to the correspond to the correct file in the `Routes` folder.
+
+And then providing console prompt to the user that they are synced with the database server.
+
+<br />
+<br />
+
+---
+
+<br />
+<br />
